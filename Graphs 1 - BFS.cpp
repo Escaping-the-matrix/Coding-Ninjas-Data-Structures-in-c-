@@ -1,5 +1,6 @@
-// BFS TRAVERSALS 
-
+// BFS TRAVERSALS
+#include <bits/stdc++.h>
+using namespace std;
 void bfs(int **graph, int n, int sv, bool *visited)
 {
 
@@ -40,7 +41,6 @@ void bfsdisconnected(int **graph, int sv, int n)
         }
     }
 }
-
 
 vector<int> *getpathbfs(int **graph, int n, int start, int end, bool *visited)
 {

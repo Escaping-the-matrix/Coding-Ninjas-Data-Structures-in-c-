@@ -1,5 +1,5 @@
-//DFS TRAVERSALS 
-//There can be more than one DFS traversals for the same graph.
+// DFS TRAVERSALS
+// There can be more than one DFS traversals for the same graph.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -64,7 +64,7 @@ void DFSdisconnected(int **graph, int sv, int n)
     }
 }
 // haspath using DFS structure.
-//return true if there is a path from start to end
+// return true if there is a path from start to end
 bool haspath(int **graph, int n, int start, int end, bool *visited)
 {
     if (start == end)
@@ -131,9 +131,10 @@ int main()
     {
         visited[i] = false;
     }
-    dfsstack(graph , n , 0 , visited) ;
-    vector<int> * ans = getpathdfs(graph , n , 0 , 3 , visited);
-    for ( int i = 0 ; i < ans->size() ; i++){
-        cout << ans->at(i) << ' ' ;
+    dfsstack(graph, n, 0, visited);
+    vector<int> *ans = getpathdfs(graph, n, 0, 3, visited);
+    for (int i = 0; i < ans->size(); i++)
+    {
+        cout << ans->at(i) << ' ';
     }
 }
